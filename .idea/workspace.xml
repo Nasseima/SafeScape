@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="40f7e293-2fdc-4ae6-8177-bdcde4ad82c1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/SafeScapeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/SafeScapeApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/common/PlaceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/common/PlaceRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/common/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/common/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/controller/ActivityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/controller/ActivityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/controller/HotelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/controller/HotelController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/controller/LawController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/controller/LawController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/controller/PlaceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/controller/PlaceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/model/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/model/Hotel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/model/Place.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/model/Place.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/services/ActivityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/services/ActivityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/services/HotelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/services/HotelService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/services/LawService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/services/LawService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/services/PlaceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/services/PlaceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/resources/Data/Hotel.JSON" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/resources/Data/Hotel.JSON" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/resources/Data/Law.JSON" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/resources/Data/Law.JSON" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/resources/Data/Place.JSON" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/resources/Data/Place.JSON" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/resources/Images/PlaceImages/MontegoBayJamaica.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/resources/Images/PlaceImages/NiceFrance.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/resources/Images/PlaceImages/ParisFrance.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/resources/Images/PlaceImages/PortoPortugal.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/SafeScape/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/SafeScape/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/SafeScape/eslint.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/SafeScape/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/SafeScape/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/SafeScape/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/SafeScape/public/vite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/SafeScape/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/SafeScape/src/App.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/SafeScape/src/assets/components/ActivityForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/SafeScape/src/assets/react.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/SafeScape/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/SafeScape/src/main.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/SafeScape/vite.config.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Kotlin Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/BackEnd/SafeScape" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2ln8XwC05foouL8Z53FLPnudmeI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.SafeScapeApplication.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/nasseima.lindsay/Documents/springboot/GLAB310.2.1-SP20&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nasseima.lindsay\Desktop\FinalProject\BackEnd\SafeScape\src\main\java\com\example\SafeScape" />
+      <recent name="C:\Users\nasseima.lindsay\Desktop\FinalProject\BackEnd\SafeScape\src\main\resources\Images" />
+      <recent name="C:\Users\nasseima.lindsay\Desktop\FinalProject\BackEnd\SafeScape\src\main\resources\static\Images" />
+      <recent name="C:\Users\nasseima.lindsay\Desktop\FinalProject\BackEnd\SafeScape\src\main\resources\static" />
+      <recent name="C:\Users\nasseima.lindsay\Desktop\FinalProject\BackEnd\SafeScape\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="SafeScapeApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.SafeScape.SafeScapeApplication" />
+      <module name="SafeScape" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.SafeScape.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="FinalProject" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="FinalProject" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SafeScapeApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="40f7e293-2fdc-4ae6-8177-bdcde4ad82c1" name="Changes" comment="" />
+      <created>1725804522922</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1725804522922</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/auth/AuthenticationController</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

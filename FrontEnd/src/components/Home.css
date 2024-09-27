@@ -1,0 +1,14 @@
+.dropdown {
+    position: absolute; 
+    z-index: 20; 
+    background-color: white; 
+
+  }
+  
+  
+  .image-container {
+    overflow: visible; 
+    position: relative; 
+    z-index: 1; 
+  }
+  
