@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40f7e293-2fdc-4ae6-8177-bdcde4ad82c1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/SafeScapeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/SafeScapeApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/common/PlaceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/common/PlaceRepository.java" afterDir="false" />
@@ -32,20 +34,6 @@
       <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/resources/Images/PlaceImages/ParisFrance.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/resources/Images/PlaceImages/PortoPortugal.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/SafeScape/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/SafeScape/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/SafeScape/eslint.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/SafeScape/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/SafeScape/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/SafeScape/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/SafeScape/public/vite.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/SafeScape/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/SafeScape/src/App.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/SafeScape/src/assets/components/ActivityForm.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/SafeScape/src/assets/react.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/SafeScape/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/SafeScape/src/main.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/SafeScape/vite.config.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

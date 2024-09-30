@@ -1,124 +1,110 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import { motion } from 'framer-motion';
-import { Button } from "../ui/Button";
-import { Input } from "../ui/Input";
-import Textarea from '../ui/textarea';
-import { Label } from '@radix-ui/react-label';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../ui/Card";
-import { toast } from 'react-hot-toast';
-import { Send, Loader2, Mail, User, MessageSquare } from 'lucide-react';
 
-const ContactUsPage = () => {
-  const form = useRef(null);
-  const [isLoading, setIsLoading] = useState(false);
+const ContactForm = () => {
+  const form = useRef();
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
-    setIsLoading(true);
 
-    if (form.current) {
-      emailjs
-        .sendForm('service_2d8v9ss', 'template_vtoxwje', form.current, {
-          publicKey: 'YOUR_PUBLIC_KEY',
-        })
-        .then(
-          () => {
-            toast.success('Message sent successfully!');
-            if (form.current) form.current.reset();
-          },
-          (error) => {
-            toast.error(`Failed to send message: ${error.text}`);
-          },
-        )
-        .finally(() => {
-          setIsLoading(false);
-        });
-    }
+    emailjs
+      .sendForm('service_2d8v9ss', 'template_vtoxwje', form.current, {
+        publicKey: '1qkM138Z44t0EEAc-',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          setIsSubmitted(true);
+          form.current.reset();
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gradient-to-br from-blue-100 to-purple-100 p-4">
-      <motion.div
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="w-full max-w-2xl" // Increased max-width for larger form
-      >
-        <Card className="shadow-xl">
-          <CardHeader className="space-y-1">
-            <CardTitle className="text-3xl font-bold text-center">Contact Us</CardTitle>
-            <CardDescription className="text-center">
-              We'd love to hear from you. Send us a message and we'll get back to you as soon as possible.
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <form ref={form} onSubmit={sendEmail} className="space-y-6"> {/* Increased space between form elements */}
-              <div className="space-y-2">
-                <Label htmlFor="user_name" className="text-sm font-medium">Name</Label>
-                <div className="relative">
-                  <User className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={18} />
-                  <Input id="user_name" name="user_name" required className="pl-10" placeholder="John Doe" />
-                </div>
+    <div className="min-h-screen bg-gradient-to-br from-indigo-100 via-purple-50 to-pink-100 flex items-center justify-center p-4 sm:p-6 lg:p-8">
+      <div className="max-w-md w-full space-y-8 bg-white p-10 rounded-2xl shadow-xl">
+        <div>
+          <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">Get in Touch</h2>
+          <p className="mt-2 text-center text-sm text-gray-600">
+            We'd love to hear from you. Send us a message!
+          </p>
+        </div>
+        {isSubmitted ? (
+          <div className="bg-green-50 border-l-4 border-green-400 p-4 rounded-md">
+            <div className="flex">
+              <div className="flex-shrink-0">
+                <svg className="h-5 w-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
               </div>
-              <div className="space-y-2">
-                <Label htmlFor="user_email" className="text-sm font-medium">Email</Label>
-                <div className="relative">
-                  <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={18} />
-                  <Input id="user_email" name="user_email" type="email" required className="pl-10" placeholder="john@example.com" />
-                </div>
+              <div className="ml-3">
+                <p className="text-sm font-medium text-green-800">
+                  Your message has been sent successfully!
+                </p>
               </div>
-              <div className="space-y-2">
-                <Label htmlFor="message" className="text-sm font-medium">Message</Label>
-                <div className="relative">
-                  <MessageSquare className="absolute left-3 top-3 text-gray-400" size={18} />
-                  <Textarea 
-                    id="message" 
-                    name="message" 
-                    required 
-                    className="min-h-[200px] pl-10 resize-y" // Increased height and added resize-y
-                    placeholder="Your message here..." 
-                  />
-                </div>
+            </div>
+          </div>
+        ) : (
+          <form ref={form} onSubmit={sendEmail} className="mt-8 space-y-6">
+            <div className="rounded-md shadow-sm -space-y-px">
+              <div>
+                <label htmlFor="user_name" className="sr-only">Name</label>
+                <input
+                  id="user_name"
+                  name="user_name"
+                  type="text"
+                  required
+                  className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                  placeholder="Your Name"
+                />
               </div>
-            </form>
-          </CardContent>
-          <CardFooter>
-            <Button 
-              type="submit" 
-              className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 transition-all duration-300"
-              disabled={isLoading}
-              onClick={() => form.current?.requestSubmit()}
-            >
-              {isLoading ? (
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: 0.2 }}
-                  className="flex items-center justify-center"
-                >
-                  <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                  Sending...
-                </motion.div>
-              ) : (
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: 0.2 }}
-                  className="flex items-center justify-center"
-                >
-                  <Send className="mr-2 h-4 w-4" />
-                  Send Message
-                </motion.div>
-              )}
-            </Button>
-          </CardFooter>
-        </Card>
-      </motion.div>
+              <div>
+                <label htmlFor="user_email" className="sr-only">Email address</label>
+                <input
+                  id="user_email"
+                  name="user_email"
+                  type="email"
+                  autoComplete="email"
+                  required
+                  className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                  placeholder="Your Email"
+                />
+              </div>
+              <div>
+                <label htmlFor="message" className="sr-only">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                  placeholder="Your Message"
+                  rows={4}
+                />
+              </div>
+            </div>
+
+            <div>
+              <button
+                type="submit"
+                className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-150 ease-in-out"
+              >
+                <span className="absolute left-0 inset-y-0 flex items-center pl-3">
+                  <svg className="h-5 w-5 text-indigo-500 group-hover:text-indigo-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" />
+                  </svg>
+                </span>
+                Send Message
+              </button>
+            </div>
+          </form>
+        )}
+      </div>
     </div>
   );
 };
 
-export default ContactUsPage;
+export default ContactForm;
