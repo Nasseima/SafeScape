@@ -1,0 +1,121 @@
+[
+  {
+    "id": 1,
+    "description": "No smoking in public places.",
+    "place": {
+      "id": 1
+    }
+  },
+  {
+    "id": 3,
+    "description": "No eating",
+    "place": {
+      "id": 1
+    }
+  },
+  {
+    "id": 2,
+    "description": "No open containers of alcohol in public areas.",
+    "place": {
+      "id": 1
+    }
+  },
+  {
+    "id": 3,
+    "description": "Noise regulations after 10 PM.",
+    "place": {
+      "id": 2
+    }
+  },
+  {
+    "id": 4,
+    "description": "Pedestrian zones in city center.",
+    "place": {
+      "id": 2
+    }
+  },
+  {
+    "id": 5,
+    "description": "Respect local dress codes at religious sites.",
+    "place": {
+      "id": 3
+    }
+  },
+  {
+    "id": 6,
+    "description": "No littering in historical sites.",
+    "place": {
+      "id": 3
+    }
+  },
+  {
+    "id": 7,
+    "description": "Prohibition of single-use plastic bags.",
+    "place": {
+      "id": 4
+    }
+  },
+  {
+    "id": 8,
+    "description": "Respect for local customs and traditions.",
+    "place": {
+      "id": 4
+    }
+  },
+  {
+    "id": 9,
+    "description": "Strict regulations on beach attire.",
+    "place": {
+      "id": 5
+    }
+  },
+  {
+    "id": 10,
+    "description": "Quiet hours in residential areas.",
+    "place": {
+      "id": 5
+    }
+  },
+  {
+    "id": 11,
+    "description": "No public drinking of alcohol.",
+    "place": {
+      "id": 12
+    }
+  },
+  {
+    "id": 12,
+    "description": "Follow local guidelines for street food consumption.",
+    "place": {
+      "id": 12
+    }
+  },
+  {
+    "id": 13,
+    "description": "Follow environmental protection laws at tourist sites.",
+    "place": {
+      "id": 13
+    }
+  },
+  {
+    "id": 14,
+    "description": "Respect local customs and environmental laws.",
+    "place": {
+      "id": 13
+    }
+  },
+  {
+    "id": 15,
+    "description": "No public consumption of alcohol.",
+    "place": {
+      "id": 15
+    }
+  },
+  {
+    "id": 16,
+    "description": "No littering on beaches.",
+    "place": {
+      "id": 16
+    }
+  }
+]

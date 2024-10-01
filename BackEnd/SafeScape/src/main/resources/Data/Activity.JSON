@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "address": "Eiffel Tower, Champ de Mars, 5 Avenue Anatole France, 75007 Paris, France",
+    "type": "Sightseeing",
+    "place": {
+      "id": 1
+    }
+  },
+  {
+    "id": 2,
+    "address": "Louvre Museum, Rue de Rivoli, 75001 Paris, France",
+    "type": "Sightseeing",
+    "place": {
+      "id": 1
+    }
+  },
+  {
+    "id": 3,
+    "address": "Luxembourg Gardens, 75006 Paris, France",
+    "type": "Sightseeing",
+    "place": {
+      "id": 1
+    }
+  },
+  {
+    "id": 4,
+    "address": "Promenade des Anglais, Nice, France",
+    "type": "Sightseeing",
+    "place": {
+      "id": 2
+    }
+  },
+  {
+    "id": 5,
+    "address": "Nice Flower Market, Cours Saleya, Nice, France",
+    "type": "Shopping",
+    "place": {
+      "id": 2
+    }
+  },
+  {
+    "id": 6,
+    "address": "Trevi Fountain, Rome, Italy",
+    "type": "Sightseeing",
+    "place": {
+      "id": 3
+    }
+  },
+  {
+    "id": 7,
+    "address": "Roman Forum, Rome, Italy",
+    "type": "Sightseeing",
+    "place": {
+      "id": 3
+    }
+  },
+  {
+    "id": 8,
+    "address": "Sushi Conveyor Belt, Tokyo, Japan",
+    "type": "Cuisine",
+    "place": {
+      "id": 4
+    }
+  },
+  {
+    "id": 9,
+    "address": "Shibuya Crossing, Tokyo, Japan",
+    "type": "Sightseeing",
+    "place": {
+      "id": 4
+    }
+  },
+  {
+    "id": 10,
+    "address": "Gion District, Kyoto, Japan",
+    "type": "Sightseeing",
+    "place": {
+      "id": 5
+    }
+  },
+  {
+    "id": 11,
+    "address": "Mount Batur Sunrise Hike, Bali, Indonesia",
+    "type": "Adventures",
+    "place": {
+      "id": 13
+    }
+  },
+  {
+    "id": 12,
+    "address": "Uluwatu Temple, Bali, Indonesia",
+    "type": "Sightseeing",
+    "place": {
+      "id": 13
+    }
+  },
+  {
+    "id": 13,
+    "address": "Marine Drive, Mumbai, India",
+    "type": "Sightseeing",
+    "place": {
+      "id": 12
+    }
+  },
+  {
+    "id": 14,
+    "address": "Connaught Place, Delhi, India",
+    "type": "Shopping",
+    "place": {
+      "id": 11
+    }
+  },
+  {
+    "id": 15,
+    "address": "Port Wine Cellar Tour, Porto, Portugal",
+    "type": "Cuisine",
+    "place": {
+      "id": 15
+    }
+  },
+  {
+    "id": 16,
+    "address": "Montego Bay Beach, Jamaica",
+    "type": "Adventures",
+    "place": {
+      "id": 16
+    }
+  }
+]

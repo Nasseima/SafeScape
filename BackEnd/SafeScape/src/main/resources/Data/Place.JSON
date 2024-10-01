@@ -1,0 +1,137 @@
+[
+{
+"id": 1,
+  "url": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727094783/paris_iq8dja.jpg",
+"country": "France",
+"city": "Paris",
+"description": "A dream for any traveler, Paris offers something magical for everyone. Stroll along the Seine River, relax in cozy street cafés, and explore chic boutiques. Don’t miss a nighttime visit to the Eiffel Tower for dazzling lights, or explore the artsy Montmartre neighborhood for picture-perfect moments."
+},
+{
+"id": 2,
+  "url": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727096562/NiceFrance_tigf5x.jpg",
+"country": "France",
+"city": "Nice",
+"description": "A sun-drenched paradise on the French Riviera, Nice is perfect for beach lovers and culture seekers. With its vibrant flower markets, Mediterranean cuisine, and pebble beaches, it’s an idyllic place to unwind and enjoy stunning sea views."
+},
+{
+"id": 3,
+  "url": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727096562/romeItaly_sn7loa.jpg",
+"country": "Italy",
+"city": "Rome",
+"description": "Beyond its famous landmarks, Rome invites you to wander its charming cobblestone streets and piazzas filled with fountains, music, and great food. Savor gelato on a sunny afternoon or enjoy a leisurely meal at a trattoria while watching the world go by."
+},
+{
+"id": 4,
+  "url": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727096979/TokyoJapan_xvbct6.jpg",
+"country": "Japan",
+"city": "Tokyo",
+"description": "This vibrant city will overload your senses in the best way. From towering skyscrapers to quirky street fashion in Harajuku, Tokyo offers endless excitement. Don’t miss out on unique dining experiences, like sushi conveyor belts or traditional ramen shops."
+},
+{
+"id": 5,
+  "url": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727097085/KyotoJapan_anamln.jpg",
+"country": "Japan",
+"city": "Kyoto",
+"description": "Kyoto is the essence of serenity, offering peaceful temples, bamboo groves, and traditional tea houses. For a magical experience, visit the famous Fushimi Inari Shrine with its thousands of red torii gates, or catch sight of geishas walking through the Gion district."
+},
+{
+"id": 6,
+  "url": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727097567/usaNyc_t8d9ju.jpg",
+"country": "USA",
+"city": "NYC",
+"description": "There’s an energy in NYC like nowhere else. Walk through the iconic Times Square, catch a Broadway show, or take a bike ride through Central Park. Shopping, dining, and cultural hotspots like SoHo and the Lower East Side await discovery."
+},
+{
+"id": 7,
+  "url": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727097725/spainBarcelona_ngh8cp.jpg",
+"country": "Spain",
+"city": "Barcelona",
+"description": "Barcelona is all about creativity and culture, with its beautiful beaches, whimsical Gaudí architecture, and lively tapas bars. Take a leisurely stroll along La Rambla or relax on the beach before diving into the city’s vibrant nightlife."
+},
+{
+"id": 8,
+  "url": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727098347/BerlinGermany_ls43tn.jpg",
+"country": "Germany",
+"city": "Berlin",
+"description": "Berlin is a trendy, vibrant city where history meets modernity. Enjoy the buzzing nightlife, street art, and innovative food scene, then unwind in one of its many green parks. Don't forget to explore quirky neighborhoods like Kreuzberg for its café culture and unique vibes."
+},
+{
+"id": 9,
+  "url": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727098493/torontoCanada_sgxsop.jpg",
+"country": "Canada",
+"city": "Toronto",
+"description": "Toronto’s diverse neighborhoods offer something for every traveler. From the iconic CN Tower to the trendy Distillery District, the city is filled with exciting activities, outdoor festivals, and waterfront dining. Don’t miss a day trip to nearby Niagara Falls for breathtaking views."
+},
+{
+"id": 10,
+  "url": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727098347/VancouverCanada_ksv3nb.jpg",
+"country": "Canada",
+"city": "Vancouver",
+"description": "Vancouver is perfect for outdoor lovers and city dwellers alike. Hike through Stanley Park, kayak in English Bay, or explore the vibrant food scene with its diverse Asian influences. The city's proximity to mountains and water makes it a year-round destination for adventure."
+},
+{
+"id": 11,
+  "url": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727098933/delhiIndia_lrqe1h.jpg",
+"country": "India",
+"city": "Delhi",
+"description": "Delhi is a bustling city with sensory overload in the best way possible. Shop in colorful markets, enjoy street food like chaat and samosas, and visit sprawling gardens. Don’t miss the lively Connaught Place for shopping, dining, and nightlife."
+},
+{
+"id": 12,
+  "url": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727099189/IndiaMumbai_ys9cfx.jpg",
+"country": "India",
+"city": "Mumbai",
+"description": "Mumbai is India’s entertainment capital, where Bollywood glamour meets local charm. Take a walk along Marine Drive at sunset, explore the historical Gateway of India, and enjoy spicy street food. The city’s vibrant nightlife will keep you up until dawn!"
+},
+{
+"id": 13,
+  "url": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727099349/IndonesiaBali_icyb0r.jpg",
+"country": "Indonesia",
+"city": "Bali",
+"description": "Bali is a tropical paradise where spirituality and adventure go hand in hand. Relax at luxurious beach resorts, take a yoga class in Ubud, or explore stunning temples like Tanah Lot. Don’t forget to hike up Mount Batur for an unforgettable sunrise experience."
+},
+{
+"id": 14,
+  "url": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727099561/egyptCairo_wsitzb.jpg",
+"country": "Egypt",
+"city": "Cairo",
+"description": "Cairo is a city of contrasts, where ancient history meets modern-day excitement. Cruise along the Nile River, shop in vibrant bazaars like Khan el-Khalili, and experience the city's buzzing energy while savoring traditional Egyptian food like koshari."
+},
+{
+  "id": 15,
+  "url": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727099793/portoPortugal_eqjtun.jpg",
+  "country": "Portugal",
+  "city": "Porto",
+  "description": "Porto is a picturesque coastal city famous for its wine, especially port. Enjoy riverfront dining along the Douro, explore the charming Ribeira district, or take a boat ride under Porto’s stunning bridges while sipping on local wine."
+},
+  {
+      "id": 16,
+      "url": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727100632/CancunMexico_bbmds1.jpg",
+      "country": "Mexico",
+      "city": "Cancun",
+      "description": "Cancun is a vibrant destination known for its stunning beaches, crystal-clear waters, and lively nightlife. Whether you’re lounging by the beach, exploring ancient Mayan ruins, or enjoying water sports, Cancun offers an unforgettable tropical getaway."
+    },
+    {
+      "id": 17,
+      "url": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727100722/ArubaEagleBeach_r6ut61.jpg",
+      "country": "Aruba",
+      "city": "Eagle Beach",
+      "description": "Eagle Beach is one of Aruba's most famous destinations, known for its soft white sands and turquoise waters. It offers a serene environment for sunbathing, swimming, and water sports, making it a favorite among tourists and locals alike. With its picturesque views and calm atmosphere, Eagle Beach is the perfect place to unwind in paradise."
+    },
+
+  {
+    "id": 18,
+    "url": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727133390/MontegoBayJamaica_omgozt.jpg",
+    "country": "Jamaica",
+    "city": "Montego Bay",
+    "description": "Montego Bay is known for its stunning beaches, vibrant nightlife, and rich culture. Visitors can enjoy water sports, explore the famous Hip Strip, and relax in luxurious resorts while soaking in the Caribbean sun."
+  },
+
+  {
+    "id": 19,
+    "url": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727133490/OchioRiosJamaica_qjs8lp.jpg",
+    "country": "Jamaica",
+    "city": "Ochio Rios",
+    "description": "Ochio Rios is a tropical paradise renowned for its beautiful waterfalls, lush gardens, and vibrant marine life. Visitors can explore the famous Dunn's River Falls, enjoy snorkeling, or relax on pristine beaches surrounded by lush greenery."
+  }
+]

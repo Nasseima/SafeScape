@@ -1,0 +1,373 @@
+[
+    {
+      "id": 1,
+      "name": "Hôtel de Crillon",
+      "address": "10 Place de la Concorde, 75008 Paris, France",
+      "url": "https://www.rosewoodhotels.com/en/hotel-de-crillon",
+      "image": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727191360/Leonardo_Phoenix_A_mesmerizing_vibrant_and_cinematic_photograp_1_bqwmot.jpg",
+      "ratings": 4.7,
+      "place": { "id": 1 }
+    },
+    {
+      "id": 2,
+      "name": "Le Meurice",
+      "address": "228 Rue de Rivoli, 75001 Paris, France",
+      "url": "https://www.dorchestercollection.com/paris/le-meurice",
+      "image": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727191470/Leonardo_Phoenix_a_dreamlike_and_vivid_cinematic_photograph_of_0_yzvgay.jpg",
+      "ratings": 4.8,
+      "place": { "id": 1 }
+    },
+
+    {
+      "id": 3,
+      "name": "Negresco",
+      "address": "37 Prom. des Anglais, 06000 Nice, France",
+      "url": "https://www.hotel-negresco-nice.com/en/hotel",
+      "image": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727192039/Leonardo_Phoenix_a_highly_detailed_and_photorealistic_cinemati_1_byf2mq.jpg",
+      "ratings": 4.8,
+      "place": { "id": 2 }
+    },
+    {
+      "id": 4,
+      "name": "Hotel Windsor",
+      "address": "11 Rue Dalpozzo, 06000 Nice, France",
+      "url": "https://www.hotelwindsornice.com/en/",
+      "image": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727192228/Leonardo_Phoenix_a_breathtakingly_surreal_and_vibrant_cinemati_1_1_acigwe.jpg",
+      "ratings": 4.7,
+      "place": { "id": 2 }
+    },
+
+    {
+      "id": 5,
+      "name": "Hotel de Russie",
+      "address": "Via del Boccaccio, 6, 00187 Roma RM, Italy",
+      "url": "https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/",
+      "image": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727192347/Leonardo_Phoenix_a_mesmerizing_and_dreamlike_cinematic_photogr_1_yfqv1n.jpg",
+      "ratings": 4.7,
+      "place": { "id": 3 }
+    },
+    {
+      "id": 6,
+      "name": "The St. Regis Rome",
+      "address": "Via Vittorio Emanuele Orlando, 3, 00185 Roma RM, Italy",
+      "url": "https://www.marriott.com/en-us/hotels/romxr-the-st-regis-rome/overview/",
+      "image": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727192348/Leonardo_Phoenix_a_highly_detailed_and_realistic_image_of_the_0_vjzmiy.jpg",
+      "ratings": 4.8,
+      "place": { "id": 3 }
+    },
+
+    {
+      "id": 7,
+      "name": "The Peninsula Tokyo",
+      "address": "1-8-1 Yurakucho, Chiyoda City, Tokyo 100-0006, Japan",
+      "url": "https://www.peninsula.com/en/tokyo/5-star-luxury-hotel-ginza",
+      "image": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727192413/Leonardo_Phoenix_a_surreal_and_vibrant_cinematic_photograph_of_1_d20nc6.jpg",
+      "ratings": 4.9,
+      "place": { "id": 4 }
+    },
+    {
+      "id": 8,
+      "name": "Park Hyatt Tokyo",
+      "address": "3-7-1-2 Nishi-Shinjuku, Shinjuku City, Tokyo 163-1055, Japan",
+      "url": "https://www.hyatt.com/en-US/hotel/japan/park-hyatt-tokyo/tyoph",
+      "image": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727192467/Leonardo_Phoenix_a_mesmerizing_and_vivid_cinematic_photograph_0_1_nkwipj.jpg",
+      "ratings": 4.8,
+      "place": { "id": 4 }
+    },
+
+    {
+      "id": 9,
+      "name": "The Celestine Kyoto Gion",
+      "address": "570 Gionmachi Minamigawa, Higashiyama Ward, Kyoto, 605-0074, Japan",
+      "url": "https://www.celestinehotels.jp/en/kyoto-gion/",
+      "image": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727192628/Leonardo_Phoenix_a_surreal_and_vibrant_cinematic_photograph_of_1_1_x5bn8p.jpg",
+      "ratings": 4.8,
+      "place": { "id": 5 }
+    },
+    {
+      "id": 10,
+      "name": "Hana-Touro, Kyoto",
+      "address": "113 Matsubara-cho, Nakagyo Ward, Kyoto, 604-8054, Japan",
+      "url": "https://rinn-kyomachi.com/en/list/rinn-gion-hana-touro/",
+      "image": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727192572/Leonardo_Phoenix_A_mesmerizing_hyperrealistic_and_vibrant_cine_0_fg0lat.jpg",
+      "ratings": 4.7,
+      "place": { "id": 5 }
+    },
+
+    {
+      "id": 11,
+      "name": "The Standard, High Line",
+      "address": "848 Washington St, New York, NY 10014, USA",
+      "url": "https://www.standardhotels.com/new-york/properties/high-line",
+      "image": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727192752/Leonardo_Phoenix_updatedprompta_highly_detailed_and_vibrant_ci_0_c9h73z.jpg",
+      "ratings": 4.7,
+      "place": { "id": 6 }
+    },
+    {
+      "id": 12,
+      "name": "The Langham, New York, Fifth Avenue",
+      "address": "400 5th Ave, New York, NY 10018, USA",
+      "url": "https://www.langhamhotels.com/en/the-langham/new-york/",
+      "image": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727192840/Leonardo_Phoenix_A_dreamlike_and_intensely_vibrant_cinematic_p_0_hufnob.jpg",
+      "ratings": 4.8,
+      "place": { "id": 6 }
+    },
+
+    {
+      "id": 13,
+      "name": "Hotel Arts Barcelona",
+      "address": "Carrer de la Marina, 19-21, 08005 Barcelona, Spain",
+      "url": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727193052/Leonardo_Phoenix_a_mesmerizing_and_vibrant_cinematic_photograp_0_1_u6haaf.jpg",
+      "image": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727195347/Leonardo_Phoenix_a_dreamlike_and_vivid_cinematic_photograph_of_0_1_egx13l.jpg",
+      "ratings": 4.7,
+      "place": { "id": 7 }
+    },
+    {
+      "id": 14,
+      "name": "Majestic Hotel & Spa Barcelona",
+      "address": "Passeig de Gràcia, 68, 08007 Barcelona, Spain",
+      "url": "https://majestichotelgroup.com/en/barcelona/hotel-majestic",
+      "image": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727193394/Leonardo_Phoenix_a_breathtakingly_surreal_and_vibrant_cinemati_1_2_fdkgja.jpg",
+      "ratings": 4.8,
+      "place": { "id": 7 }
+    },
+
+    {
+      "id": 15,
+      "name": "Hotel Adlon Kempinski",
+      "address": "Unter den Linden 77, 10117 Berlin, Germany",
+      "url": "https://www.kempinski.com/en/hotel-adlon",
+      "image": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727193414/Leonardo_Phoenix_a_vibrant_and_dreamlike_cinematic_photograph_0_hyveux.jpg",
+      "ratings": 4.8,
+      "place": { "id": 8 }
+    },
+    {
+      "id": 16,
+      "name": "The Ritz-Carlton, Berlin",
+      "address": "Potsdamer Platz, 3, 10785 Berlin, Germany",
+      "url": "https://www.ritzcarlton.com/en/hotels/berzt-the-ritz-carlton-berlin/overview/",
+      "image": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727193485/Leonardo_Phoenix_a_mesmerizingly_detailed_and_vibrant_cinemati_1_blp0qn.jpg",
+      "ratings": 4.7,
+      "place": { "id": 8 }
+    },
+
+    {
+      "id": 17,
+      "name": "Shangri-La Hotel Toronto",
+      "address": "188 University Ave, Toronto, ON M5H 0A3, Canada",
+      "url": "https://www.shangri-la.com/toronto/shangrila/?WT.mc_id=SLTO_2024_MEIA-Canada_SEM_GOOGLE_AON_BRANDINTERNATIONAL_RSA_TEXTLINK_EN-NA_Shangri%20la%20hotel%20toronto-SLTO&gad_source=1&gclid=Cj0KCQjwo8S3BhDeARIsAFRmkOPk5TBU91VveJ-rl3JZ9dKJhmAALYhpd6L20_F_3F1HE2vdah0sQlsaAhYKEALw_wcB&gclsrc=aw.ds",
+      "image": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727193552/Leonardo_Phoenix_a_strikingly_vibrant_and_cinematic_photograph_1_diqrca.jpg",
+      "ratings": 4.7,
+      "place": { "id": 9 }
+    },
+    {
+      "id": 18,
+      "name": "The Ritz-Carlton, Toronto",
+      "address": "181 Wellington St W, Toronto, ON M5V 3G7, Canada",
+      "url": "https://www.ritzcarlton.com/en/hotels/yyzrz-the-ritz-carlton-toronto/overview/",
+      "image": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727193617/Leonardo_Phoenix_a_breathtakingly_vivid_and_surreal_cinematic_0_htlk08.jpg",
+      "ratings": 4.8,
+      "place": { "id": 9 }
+    },
+    {
+      "id": 19,
+      "name": "Fairmont Pacific Rim",
+      "address": "1038 Canada Pl, Vancouver, BC V6C 0B9, Canada",
+      "url": "https://www.fairmont.com/pacific-rim-vancouver/",
+      "image": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727191284/Leonardo_Phoenix_a_dreamlike_and_visually_stunning_cinematic_p_3_qkobok.jpg",
+      "ratings": 4.8,
+      "place": { "id": 10 }
+    },
+    {
+      "id": 20,
+      "name": "Rosewood Hotel Georgia",
+      "address": "801 W Georgia St, Vancouver, BC V6C 1P7, Canada",
+      "url": "https://www.rosewoodhotels.com/en/hotel-georgia-vancouver",
+      "image": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727193666/Leonardo_Phoenix_a_surreal_and_vibrant_cinematic_photograph_of_1_2_gvdnfg.jpg",
+      "ratings": 4.7,
+      "place": { "id": 10 }
+    },
+    {
+      "id": 21,
+      "name": "The Oberoi, New Delhi",
+      "address": "Dr. Zakir Hussain Marg, New Delhi, Delhi 110003, India",
+      "url": "https://www.oberoihotels.com/hotels-in-delhi/",
+      "image": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727193723/Leonardo_Phoenix_a_mesmerizing_and_vivid_cinematic_photograph_1_tnbllt.jpg",
+      "ratings": 4.8,
+      "place": { "id": 11 }
+    },
+    {
+      "id": 22,
+      "name": "Taj Palace, New Delhi",
+      "address": "2 Sardar Patel Marg, Chanakyapuri, New Delhi, Delhi 110021, India",
+      "url": "https://www.tajhotels.com/en-in/hotels/taj-palace-new-delhi",
+      "image": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727193796/Leonardo_Phoenix_A_majestic_and_vibrant_cinematic_photograph_o_0_bpiddu.jpg",
+      "ratings": 4.7,
+      "place": { "id": 11 }
+    },
+    {
+      "id": 23,
+      "name": "The Taj Mahal Palace",
+      "address": "Apollo Bunder, Colaba, Mumbai, Maharashtra 400001, India",
+      "url": "https://www.tajhotels.com/en-in/hotels/taj-mahal-palace-mumbai",
+      "image": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727193799/Leonardo_Phoenix_a_highly_detailed_and_photorealistic_cinemati_1_1_g1nscw.jpg",
+      "ratings": 4.9,
+      "place": { "id": 12 }
+    },
+    {
+      "id": 24,
+      "name": "The Oberoi, Mumbai",
+      "address": "Nariman Point, Mumbai, Maharashtra 400021, India",
+      "url": "https://www.oberoihotels.com/hotels-in-mumbai/",
+      "image": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727194196/Leonardo_Phoenix_a_breathtaking_highcontrast_cinematic_photogr_1_p7sbos.jpg",
+      "ratings": 4.7,
+      "place": { "id": 12 }
+    },
+    {
+      "id": 25,
+      "name": "The St. Regis Bali Resort",
+      "address": "Kawasan Pariwisata, Nusa Dua, Bali 80363, Indonesia",
+      "url": "https://www.marriott.com/en-us/hotels/dpsxr-the-st-regis-bali-resort/overview/",
+      "image": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727194268/Leonardo_Phoenix_A_mesmerizing_hyperrealistic_and_vividly_colo_1_yoez9e.jpg",
+      "ratings": 4.8,
+      "place": { "id": 13 }
+    },
+    {
+      "id": 26,
+      "name": "Four Seasons Resort Bali at Sayan",
+      "address": "Jalan Raya Sayan, Sayan, Ubud, Bali 80571, Indonesia",
+      "url": "https://www.fourseasons.com/sayan/",
+      "image": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727193256/Leonardo_Phoenix_a_breathtakingly_surreal_and_vibrant_cinemati_1_2_czvsaq.jpg",
+      "ratings": 4.9,
+      "place": { "id": 13 }
+    },
+    {
+      "id": 27,
+      "name": "Four Seasons Hotel Cairo at Nile Plaza",
+      "address": "1089 Corniche El Nile, Garden City, Cairo 11221, Egypt",
+      "url": "https://www.fourseasons.com/caironp/",
+      "image": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727193207/Leonardo_Phoenix_a_surreal_and_vibrant_cinematic_photograph_fe_1_adwqmz.jpg",
+      "ratings": 4.9,
+      "place": { "id": 14 }
+    },
+    {
+      "id": 28,
+      "name": "The Nile Ritz-Carlton, Cairo",
+      "address": "1113 Corniche El Nile, 1113, Cairo 11221, Egypt",
+      "url": "https://www.ritzcarlton.com/en/hotels/cairz-the-nile-ritz-carlton-cairo/overview/",
+      "image": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727194449/Leonardo_Phoenix_a_highly_detailed_and_realistic_image_of_the_1_jiqimi.jpg",
+      "ratings": 4.8,
+      "place": { "id": 14 }
+    },
+    {
+      "id": 29,
+      "name": "Pestana Vintage Porto",
+      "address": "Rua da Alfândega, 10, 4050-200 Porto, Portugal",
+      "url": "https://www.pestanacollection.com/en/hotel/pestana-porto",
+      "image": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727194564/Leonardo_Phoenix_a_highly_detailed_and_cinematic_photograph_of_1_rnjeqj.jpg",
+      "ratings": 4.8,
+      "place": { "id": 15 }
+    },
+    {
+      "id": 30,
+      "name": "The Yeatman",
+      "address": "Rua do Choupelo, 2, 4400-088 Vila Nova de Gaia, Portugal",
+      "url": "https://www.the-yeatman-hotel.com/en/",
+      "image": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727194568/Leonardo_Phoenix_a_majestic_and_vivid_cinematic_photograph_of_1_a5dw8s.jpg",
+      "ratings": 4.9,
+      "place": { "id": 15 }
+    },
+
+    {
+      "id": 31,
+      "name": "Nizuc Resort & Spa",
+      "address": "Boulevard Kukulcan, Zona Hotelera, 77500 Cancún, Mexico",
+      "url": "https://www.nizuc.com/",
+      "image": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727194729/Leonardo_Phoenix_a_highly_detailed_and_realistic_photograph_of_1_pcu5km.jpg",
+      "ratings": 4.9,
+      "place": { "id": 16 }
+    },
+    {
+      "id": 32,
+      "name": "Grand Fiesta Americana Coral Beach",
+      "address": "Boulevard Kukulcan, 9, Zona Hotelera, 77500 Cancún, Mexico",
+      "url": "https://www.coralbeachcancunresort.com/",
+      "image": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727194737/Leonardo_Phoenix_a_highly_detailed_and_realistic_image_of_the_0_1_nwhag1.jpg",
+      "ratings": 4.8,
+      "place": { "id": 16 }
+    },
+    {
+      "id": 33,
+      "name": "Renaissance Aruba Resort & Casino",
+      "address": "L.G. Smith Blvd 82, Oranjestad, Aruba",
+      "url": "https://www.marriott.com/en-us/hotels/auabr-renaissance-wind-creek-aruba-resort/overview/",
+      "image": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727194859/Leonardo_Phoenix_a_highly_detailed_and_hyperrealistic_image_of_0_hi59nl.jpg",
+      "ratings": 4.7,
+      "place": { "id": 17 }
+    },
+    {
+      "id": 34,
+      "name": "The Ritz-Carlton, Aruba",
+      "address": "L.G. Smith Blvd 107, Noord, Aruba",
+      "url": "https://www.ritzcarlton.com/en/hotels/auart-the-ritz-carlton-aruba/overview/",
+      "image": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727194914/Leonardo_Phoenix_a_breathtakingly_vibrant_and_surreal_cinemati_1_wjamna.jpg",
+      "ratings": 4.9,
+      "place": { "id": 17 }
+    },
+  {
+    "id": 35,
+    "name": "Sandals Montego Bay",
+    "address": "Kent Avenue, Montego Bay, Jamaica",
+    "url": "https://www.sandals.com/sale/?gad_source=1&gclid=Cj0KCQjwo8S3BhDeARIsAFRmkOOr3GkuyBXaLymq3O2LlUNYr4d-d0zoF9GtuUwfqKw4s0r9tqs23vMaAhznEALw_wcB&gclsrc=aw.ds",
+    "image": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727194949/Leonardo_Phoenix_a_highly_detailed_and_realistic_cinematic_pho_1_fel4if.jpg",
+    "ratings": 4.8,
+    "place": {
+      "id": 18
+    }
+  },
+  {
+    "id": 36,
+    "name": "Secrets Wild Orchid Montego Bay",
+    "address": "Lot 59A, Freeport, Montego Bay, Jamaica",
+    "url": "https://www.hyatt.com/en-US/hotel/jamaica/secrets-wild-orchid/sewmb",
+    "image": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727195034/Leonardo_Phoenix_a_highly_detailed_and_vibrant_cinematic_photo_1_tib7in.jpg",
+    "ratings": 4.7,
+    "place": {
+      "id": 18
+    }
+  },
+  {
+    "id": 37,
+    "name": "Moon Palace Jamaica",
+    "address": "Ocho Rios, Jamaica",
+    "url": "https://jamaica.moonpalace.com/offers?gad_source=1&gclid=Cj0KCQjwo8S3BhDeARIsAFRmkOPIMG_tUX0CarWIG4C12Dwm2sI3nfkgAiHAPdo55gPzYf8M6KeRF58aApbAEALw_wcB&gclsrc=aw.ds",
+    "image": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727195115/Leonardo_Phoenix_a_breathtaking_and_vivid_cinematic_photograph_0_doekzz.jpg",
+    "ratings": 4.7,
+    "place": {
+      "id": 19
+    }
+  },
+  {
+    "id": 38,
+    "name": "Jamaica Inn",
+    "address": "Main Street, Ocho Rios, Jamaica",
+    "url": "https://www.jamaicainn.com/",
+    "image": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727195159/Leonardo_Phoenix_a_mesmerizing_and_vibrant_cinematic_photograp_1_z0qzex.jpg",
+    "ratings": 4.8,
+    "place": {
+      "id": 19
+    }
+  },
+  {
+    "id": 39,
+    "name": "The Jamaica Beach Resort",
+    "address": "Ochio Rios, Jamaica",
+    "url": "https://www.jamaicaresort.com/?source=google&cn=resort&ag=jamaicahotelresort&gad_source=1&gclid=Cj0KCQjwo8S3BhDeARIsAFRmkON1SQtwL7iZQ7QRgbT8CQApLSXTfend4HHmJPeAYzg-r5fIhuaqteMaAiByEALw_wcB",
+    "image": "https://res.cloudinary.com/dfeso4y1e/image/upload/v1727195195/Leonardo_Phoenix_a_surreal_and_vibrant_cinematic_photograph_of_0_1_zrsays.jpg",
+    "ratings": 4.5,
+    "place": {
+      "id": 19
+    }
+  }
+  ]
+
