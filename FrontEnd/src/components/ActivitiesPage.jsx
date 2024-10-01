@@ -125,9 +125,6 @@ const ActivitiesPage = () => {
                 <p className="text-gray-600 mb-4 flex items-center">
                   <MapPin className="mr-2 h-4 w-4" /> {activity.address}
                 </p>
-                <Button className="w-full bg-blue-500 hover:bg-blue-600 text-white">
-                  Learn More
-                </Button>
               </CardContent>
             </Card>
           </motion.div>

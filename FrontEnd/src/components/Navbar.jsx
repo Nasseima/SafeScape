@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Menu, X, ChevronDown, User, LogOut, Heart, MessageSquare, BookOpen } from 'lucide-react';
+import logo from '../assets/HomeImg/logo.jpg'
 
 const Navbar = ({ isAuthenticated, setIsAuthenticated, username }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +22,6 @@ const Navbar = ({ isAuthenticated, setIsAuthenticated, username }) => {
   };
 
   const navLinks = [
-    { name: 'Flight', path: '/flight' },
     { name: 'Calendar', path: '/calendar' },
   ];
 
@@ -33,6 +33,7 @@ const Navbar = ({ isAuthenticated, setIsAuthenticated, username }) => {
   ];
 
   const resourceLinks = [
+    { name: 'Flight', path: '/flight' },
     { name: 'Safety Tips', path: '/safety' },
     { name: 'Contact Us', path: '/contact' }
   ];
@@ -42,14 +43,17 @@ const Navbar = ({ isAuthenticated, setIsAuthenticated, username }) => {
       <nav className="bg-blue-600 text-white fixed top-0 left-0 right-0 z-50 shadow-md">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center py-4">
-            <Link to="/" className="text-2xl font-bold">
-              SafeScape
-            </Link>
+            <div className="flex items-center">
+              <img src={logo} alt="Logo" className="h-10 w-10 rounded-lg cursor-pointer border-solid border-2 border-white mr-2"/>
+              <Link to="/" className="text-2xl font-bold">
+                SafeScape
+              </Link>
+            </div>
             {isAuthenticated && (
               <div className="hidden md:flex items-center justify-center flex-grow">
                 <div className="flex items-center text-xl font-bold bg-gradient-to-r from-yellow-400 to-orange-500 text-blue-900 px-6 py-3 rounded-full shadow-md border-2 border-white">
                   <User className="mr-3 h-6 w-6" />
-                  <span>Welcome, {username}</span>
+                  <span>Welcome {username}</span>
                 </div>
               </div>
             )}
@@ -108,7 +112,7 @@ const Navbar = ({ isAuthenticated, setIsAuthenticated, username }) => {
             {isAuthenticated && (
               <div className="py-3 text-xl font-bold bg-gradient-to-r from-yellow-400 to-orange-500 text-blue-900 px-4 rounded-full mb-4">
                 <User className="inline-block mr-3 h-6 w-6" />
-                Welcome, {username}
+                Welcome {username}
               </div>
             )}
             {navLinks.map((link) => (

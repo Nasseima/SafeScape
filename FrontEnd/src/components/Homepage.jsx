@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { Input } from '../ui/Input'
+import { Link } from 'react-router-dom'
 import { Button } from '../ui/Button'
 import { Card, CardContent } from '../ui/Card'
-import { Plane, MapPin, Sun, Search, ArrowRight } from 'lucide-react'
+import { Plane, MapPin, Sun, Compass, ArrowRight } from 'lucide-react'
 import WeatherWidget from './WeatherWidget'
 import './Home.css'
 
@@ -72,15 +72,17 @@ export default function HomePage() {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              <Button className="bg-[#F26419] hover:bg-[#F26419]/90 text-white text-lg px-8 py-6 rounded-full">
-                Start Your Adventure <Plane className="ml-2 h-5 w-5" />
-              </Button>
+              <Link to="/flight">
+                <Button className="bg-[#F26419] hover:bg-[#F26419]/90 text-white text-lg px-8 py-6 rounded-full">
+                  Start Your Adventure <Plane className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Weather Widget and Search Section */}
+      {/* Weather Widget and Travel Tips Section */}
       <section className="py-12 bg-gradient-to-b from-[#05668D] to-[#02C39A]">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row gap-8 items-stretch">
@@ -91,16 +93,26 @@ export default function HomePage() {
               </Card>
             </div>
             <div className="flex-1">
-              <h2 className="text-4xl font-bold mb-8 text-white">Find Your Escape</h2>
+              <h2 className="text-4xl font-bold mb-8 text-white">Travel Tips</h2>
               <Card className="bg-white/10 text-white backdrop-blur-md overflow-hidden h-full">
                 <CardContent className="p-6">
-                  <p className="mb-4">Uncover your perfect destination with our intelligent travel search</p>
-                  <div className="flex gap-4">
-                    <Input placeholder="Where do you want to go?" className="flex-grow bg-white text-[#2F2F2F]" />
-                    <Button className="bg-[#F26419] hover:bg-[#F26419]/90">
-                      <Search className="mr-2 h-4 w-4" /> Explore
-                    </Button>
-                  </div>
+                  <ul className="space-y-4">
+                    <li className="flex items-start">
+                      <Compass className="mr-2 h-6 w-6 flex-shrink-0" />
+                      <span>Research local customs and etiquette before your trip</span>
+                    </li>
+                    <li className="flex items-start">
+                      <MapPin className="mr-2 h-6 w-6 flex-shrink-0" />
+                      <span>Download offline maps for your destination</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Sun className="mr-2 h-6 w-6 flex-shrink-0" />
+                      <span>Pack versatile clothing suitable for various weather conditions</span>
+                    </li>
+                  </ul>
+                  <Link to="/safety" className="inline-flex items-center mt-4 text-[#F26419] hover:underline">
+                    More tips <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
                 </CardContent>
               </Card>
             </div>
@@ -177,36 +189,10 @@ export default function HomePage() {
         </div>
         <div className="absolute inset-0 opacity-10">
           <img
-            // src="https://ik.imagekit.io/vercel-v0/travel/world-map.png"
+            src="/placeholder.svg?height=1080&width=1920"
             alt="World Map"
             className="w-full h-full object-cover"
           />
-        </div>
-      </section>
-
-      {/* Newsletter Section with Unique Design */}
-      <section className="py-12 bg-[#F0F3F5]">
-        <div className="container mx-auto px-4">
-          <Card className="bg-gradient-to-r from-[#02C39A] to-[#05668D] text-white overflow-hidden">
-            <CardContent className="p-8">
-              <div className="flex flex-col md:flex-row items-center justify-between">
-                <div className="mb-6 md:mb-0">
-                  <h2 className="text-3xl font-bold mb-2">Stay Inspired</h2>
-                  <p className="text-lg">Get our latest travel tips and exclusive offers delivered to your inbox.</p>
-                </div>
-                <div className="flex w-full md:w-auto">
-                  <Input
-                    type="email"
-                    placeholder="Enter your email"
-                    className="bg-white text-[#2F2F2F] rounded-r-none"
-                  />
-                  <Button className="bg-[#F26419] hover:bg-[#F26419]/90 rounded-l-none">
-                    Subscribe <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
         </div>
       </section>
     </div>

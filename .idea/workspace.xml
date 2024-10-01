@@ -6,34 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="40f7e293-2fdc-4ae6-8177-bdcde4ad82c1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/SafeScapeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/SafeScapeApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/common/PlaceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/common/PlaceRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/common/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/common/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/controller/ActivityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/controller/ActivityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/controller/HotelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/controller/HotelController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/controller/LawController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/controller/LawController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/controller/PlaceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/controller/PlaceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/model/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/model/Hotel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/model/Place.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/model/Place.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/services/ActivityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/services/ActivityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/services/HotelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/services/HotelService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/services/LawService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/services/LawService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/services/PlaceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/services/PlaceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/resources/Data/Hotel.JSON" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/resources/Data/Hotel.JSON" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/resources/Data/Law.JSON" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/resources/Data/Law.JSON" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/resources/Data/Place.JSON" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/resources/Data/Place.JSON" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/resources/Images/PlaceImages/MontegoBayJamaica.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/resources/Images/PlaceImages/NiceFrance.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/resources/Images/PlaceImages/ParisFrance.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/resources/Images/PlaceImages/PortoPortugal.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/src/components/ActivitiesPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/components/ActivitiesPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/src/components/ActivityDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/components/ActivityDetails.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/src/components/FlightsPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/components/FlightsPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/src/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/components/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/src/components/Homepage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/components/Homepage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/src/components/LoginPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/components/LoginPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/src/components/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/components/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/src/components/SafetyTipsPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/components/SafetyTipsPage.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +34,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/BackEnd/SafeScape" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -63,19 +44,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.SafeScapeApplication.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/nasseima.lindsay/Documents/springboot/GLAB310.2.1-SP20&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.SafeScapeApplication.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "<unknown>",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/nasseima.lindsay/Documents/springboot/GLAB310.2.1-SP20",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propCompiler"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\nasseima.lindsay\Desktop\FinalProject\BackEnd\SafeScape\src\main\java\com\example\SafeScape" />

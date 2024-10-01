@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
-import { Input } from "../ui/Input";
-import { Button } from "../ui/Button";
 import { Card, CardContent } from "../ui/Card";
-import { Plane, Calendar, MapPin, Info, ArrowRight, Globe, DollarSign, Shield } from 'lucide-react';
+import { Plane, Calendar, MapPin, Info, Globe, DollarSign, Shield, Tag, ExternalLink } from 'lucide-react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/Tabs";
 
 import delta from '../assets/Airplanes/Delta.jpg';
@@ -12,22 +10,19 @@ import americanAirlines from '../assets/Airplanes/AmericanAirlines.jpg';
 import SouthwestAirlines from '../assets/Airplanes/SouthwestAirlines.jpg';
 
 const FlightPage = () => {
-  const [origin, setOrigin] = useState('');
-  const [destination, setDestination] = useState('');
-  const [departureDate, setDepartureDate] = useState('');
-  const [returnDate, setReturnDate] = useState('');
-
-  const handleSearch = (e) => {
-    e.preventDefault();
-    const query = `from=${encodeURIComponent(origin)}&to=${encodeURIComponent(destination)}&departureDate=${encodeURIComponent(departureDate)}&returnDate=${encodeURIComponent(returnDate)}`;
-    window.open(`https://www.google.com/flights?hl=en#flt=${query}`, '_blank');
-  };
-
   const fadeInUp = {
     initial: { opacity: 0, y: 20 },
     animate: { opacity: 1, y: 0 },
     transition: { duration: 0.5 }
   };
+
+  const flightDeals = [
+    { from: 'New York', to: 'London', price: '$399', airline: 'Delta', url: 'https://www.delta.com' },
+    { from: 'Los Angeles', to: 'Tokyo', price: '$699', airline: 'American Airlines', url: 'https://www.aa.com' },
+    { from: 'Chicago', to: 'Paris', price: '$449', airline: 'United', url: 'https://www.united.com' },
+    { from: 'San Francisco', to: 'Sydney', price: '$899', airline: 'Qantas', url: 'https://www.qantas.com' },
+    { from: 'Miami', to: 'Rio de Janeiro', price: '$599', airline: 'LATAM', url: 'https://www.latam.com' },
+  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-100 to-purple-100 py-12">
@@ -41,56 +36,35 @@ const FlightPage = () => {
           Discover Your Next Adventure
         </motion.h1>
 
-        {/* Flight Search Form */}
+        {/* Flight Deals */}
         <motion.div {...fadeInUp}>
           <Card className="mb-8 overflow-hidden">
             <CardContent className="p-6 bg-white bg-opacity-80 backdrop-blur-md">
-              <h2 className="text-2xl font-semibold mb-4 text-blue-800">Search for Flights</h2>
-              <form onSubmit={handleSearch} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
-                <div className="flex items-center space-x-2">
-                  <MapPin className="text-blue-600" />
-                  <Input
-                    type="text"
-                    placeholder="From"
-                    value={origin}
-                    onChange={(e) => setOrigin(e.target.value)}
-                    required
-                    className="border-blue-300 focus:border-blue-500"
-                  />
-                </div>
-                <div className="flex items-center space-x-2">
-                  <MapPin className="text-blue-600" />
-                  <Input
-                    type="text"
-                    placeholder="To"
-                    value={destination}
-                    onChange={(e) => setDestination(e.target.value)}
-                    required
-                    className="border-blue-300 focus:border-blue-500"
-                  />
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Calendar className="text-blue-600" />
-                  <Input
-                    type="date"
-                    value={departureDate}
-                    onChange={(e) => setDepartureDate(e.target.value)}
-                    className="border-blue-300 focus:border-blue-500"
-                  />
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Calendar className="text-blue-600" />
-                  <Input
-                    type="date"
-                    value={returnDate}
-                    onChange={(e) => setReturnDate(e.target.value)}
-                    className="border-blue-300 focus:border-blue-500"
-                  />
-                </div>
-                <Button type="submit" className="bg-blue-600 hover:bg-blue-700 text-white">
-                  <Plane className="mr-2 h-4 w-4" /> Search Flights
-                </Button>
-              </form>
+              <h2 className="text-2xl font-semibold mb-4 text-blue-800">Hot Flight Deals</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {flightDeals.map((deal, index) => (
+                  <div key={index} className="bg-blue-50 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <a 
+                      href={deal.url} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="block"
+                    >
+                      <div className="flex justify-between items-center mb-2">
+                        <span className="text-blue-800 font-semibold hover:underline flex items-center">
+                          {deal.from} to {deal.to}
+                          <ExternalLink className="ml-1 h-4 w-4" />
+                        </span>
+                        <Tag className="text-green-600 h-5 w-5" />
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <span className="text-gray-600">{deal.airline}</span>
+                        <span className="text-green-600 font-bold">{deal.price}</span>
+                      </div>
+                    </a>
+                  </div>
+                ))}
+              </div>
             </CardContent>
           </Card>
         </motion.div>
