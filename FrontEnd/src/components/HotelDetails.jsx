@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { Loader, MapPin, Star } from 'lucide-react'
+import { ToastContainer, toast,  Bounce } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function HotelDetails() {
   const [hotels, setHotels] = useState([]);
@@ -21,7 +23,7 @@ function HotelDetails() {
       const data = await response.json();
       setHotels(data);
     } catch (error) {
-      console.error('Error fetching hotels:', error);
+      toast.error("Error fetching hotels");
     } finally {
       setIsLoading(false);
     }
@@ -37,6 +39,16 @@ function HotelDetails() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-12 px-4 sm:px-6 lg:px-8">
+       <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        closeOnClick
+        pauseOnHover
+        draggable
+        theme="light" 
+        transition={Bounce} 
+      />
       <div className="max-w-7xl mx-auto">
         <h1 className="text-3xl font-bold text-center mb-10 text-gray-800">Hotels in this Location</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

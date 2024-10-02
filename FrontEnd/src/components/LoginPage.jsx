@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { Eye, EyeOff } from 'lucide-react';
+import { ToastContainer, toast, Bounce } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const LoginPage = ({ setIsAuthenticated, setUsername }) => {
   const [email, setEmail] = useState('');
@@ -27,8 +29,7 @@ const LoginPage = ({ setIsAuthenticated, setUsername }) => {
       if (response.status === 200) {
         localStorage.setItem('token', response.data.access_token);
         localStorage.setItem('user_id', response.data.user_id)
-        // console.log(response.data.user_id)
-        // console.log(response)
+        
 
         localStorage.setItem('username', response.data.username)
         // console.log(username)
@@ -39,11 +40,11 @@ const LoginPage = ({ setIsAuthenticated, setUsername }) => {
       } 
     } catch (err) {
       if (err.response && err.response.status === 500) {
-        setError('Invalid email or password. Please try again.');
+        toast.error("Invalid email or password. Please try again.");
       } else {
-        setError('An error occurred. Please try again later.');
+        toast.error("An error occurred. Please try again later.");
       }
-      console.error('Login error:', err);
+      toast.error("Login unsuccessful....try again!");
     } finally {
       setIsLoading(false);
     }
@@ -56,6 +57,16 @@ const LoginPage = ({ setIsAuthenticated, setUsername }) => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
+       <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        closeOnClick
+        pauseOnHover
+        draggable
+        theme="light" 
+        transition={Bounce} 
+      />
       <div className="max-w-md w-full bg-white shadow-md rounded-lg p-8">
         <h2 className="text-3xl font-bold mb-6 text-center text-gray-800">Login to SafeScape</h2>
         {error && (

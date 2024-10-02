@@ -17,12 +17,9 @@ import {
   DialogTitle,
 } from "../ui/Dialog";
 import { ScrollArea } from "../ui/Scroll-area";
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, toast,  Bounce } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-
-const token = localStorage.getItem('token');
-const userId = localStorage.getItem('user_id');
 
 const CalendarPage = () => {
   const [events, setEvents] = useState([]);
@@ -31,47 +28,25 @@ const CalendarPage = () => {
   const [eventDetails, setEventDetails] = useState({ title: '', start: '', end: '', description: '', color: '#3788d8' });
   const calendarRef = useRef(null);
 
-  useEffect(() => {
-    fetchEvents();
-  }, []);
+  // Get the user ID from localStorage
+  const userId = localStorage.getItem('user_id');
 
-  const fetchEvents = async () => {
-    try {
-      const response = await fetch(`http://localhost:8081/events/all/${userId}`, {
-        headers: { Authorization: `Bearer ${token}` }
-      });
-      if (!response.ok) {
-        throw new Error('Failed to fetch events');
-      }
-      const data = await response.json();
-      setEvents(data);
-    } catch (error) {
-      toast.error("Error fetching events....");
-      const localEvents = JSON.parse(localStorage.getItem(`events_${userId}`) || '[]');
-      setEvents(localEvents);
+  useEffect(() => {
+    if (userId) {
+      loadEvents();
+    } else {
+      toast.error("User ID not found. Please log in.");
     }
+  }, [userId]);
+
+  const loadEvents = () => {
+    const storedEvents = JSON.parse(localStorage.getItem(`events_${userId}`) || '[]');
+    setEvents(storedEvents);
   };
 
-  const saveEventToBackend = async (event) => {
-    try {
-      const response = await fetch('http://localhost:8081/events/save/all/${userID}', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Authorization: `Bearer ${token}`
-        },
-        body: JSON.stringify({ ...event, userId })
-      });
-      if (!response.ok) {
-        throw new Error('Failed to save event');
-      }
-      const savedEvent = await response.json();
-      return savedEvent;
-    } catch (error) {
-      console.error('Error saving event to backend:', error);
-      toast.error("Failed to save event to server. Changes saved locally.");
-      return null;
-    }
+  const saveEvents = (updatedEvents) => {
+    localStorage.setItem(`events_${userId}`, JSON.stringify(updatedEvents));
+    setEvents(updatedEvents);
   };
 
   const handleDateSelect = (selectInfo) => {
@@ -97,7 +72,12 @@ const CalendarPage = () => {
     setShowEventModal(true);
   };
 
-  const handleSaveEvent = useCallback(async () => {
+  const handleSaveEvent = useCallback(() => {
+    if (!userId) {
+      toast.error("User ID not found. Please log in to save events.");
+      return;
+    }
+
     const newEvent = {
       id: selectedEvent ? selectedEvent.id : Date.now().toString(),
       title: eventDetails.title,
@@ -108,54 +88,52 @@ const CalendarPage = () => {
       borderColor: eventDetails.color
     };
 
-    const savedEvent = await saveEventToBackend(newEvent);
-    
-    if (savedEvent) {
-      let updatedEvents;
-      if (selectedEvent) {
-        updatedEvents = events.map(event => event.id === savedEvent.id ? savedEvent : event);
-      } else {
-        updatedEvents = [...events, savedEvent];
-      }
-
-      setEvents(updatedEvents);
-      localStorage.setItem(`events_${userId}`, JSON.stringify(updatedEvents));
-      setShowEventModal(false);
-      setSelectedEvent(null);
-      toast.success(selectedEvent ? 'Event updated successfully' : 'Event added successfully');
+    let updatedEvents;
+    if (selectedEvent) {
+      updatedEvents = events.map(event => event.id === newEvent.id ? newEvent : event);
+    } else {
+      updatedEvents = [...events, newEvent];
     }
+
+    saveEvents(updatedEvents);
+    setShowEventModal(false);
+    setSelectedEvent(null);
+    toast.success(selectedEvent ? 'Event updated successfully' : 'Event added successfully');
   }, [events, selectedEvent, eventDetails, userId]);
 
-  const handleDeleteEvent = useCallback(async () => {
-    if (selectedEvent) {
-      try {
-        const response = await fetch(`http://localhost:8081/events/${selectedEvent.id}`, {
-          method: 'DELETE',
-          headers: { Authorization: `Bearer ${token}` }
-        });
-        if (!response.ok) {
-          throw new Error('Failed to delete event');
-        }
-        const updatedEvents = events.filter(event => event.id !== selectedEvent.id);
-        setEvents(updatedEvents);
-        localStorage.setItem(`events_${userId}`, JSON.stringify(updatedEvents));
-        setShowEventModal(false);
-        setSelectedEvent(null);
-        toast.success('Event deleted successfully');
-      } catch (error) {
-        console.error('Error deleting event:', error);
-        toast.error("Failed to delete event. Please try again.");
-      }
+  const handleDeleteEvent = useCallback(() => {
+    if (!userId) {
+      toast.error("User ID not found. Please log in to delete events.");
+      return;
     }
-  }, [events, selectedEvent, userId, token]);
+
+    if (selectedEvent) {
+      const updatedEvents = events.filter(event => event.id !== selectedEvent.id);
+      saveEvents(updatedEvents);
+      setShowEventModal(false);
+      setSelectedEvent(null);
+      toast.success('Event deleted successfully');
+    }
+  }, [events, selectedEvent, userId]);
 
   const upcomingEvents = events
     .filter(event => new Date(event.start) > new Date())
     .sort((a, b) => new Date(a.start) - new Date(b.start));
 
+  if (!userId) {
+    return (
+      <div className="flex h-screen items-center justify-center bg-gray-100">
+        <div className="text-center">
+          <h1 className="text-2xl font-bold mb-4">User Not Logged In</h1>
+          <p>Please log in to view and manage your events.</p>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="flex h-screen bg-gray-100">
-       <ToastContainer
+      <ToastContainer
         position="top-center"
         autoClose={5000}
         hideProgressBar={false}

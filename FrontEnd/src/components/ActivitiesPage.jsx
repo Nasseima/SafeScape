@@ -5,6 +5,8 @@ import { Input } from '../ui/Input';
 import { Button } from '../ui/Button';
 import { Card, CardContent } from '../ui/Card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/Tabs';
+import { ToastContainer, toast, Bounce } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ActivitiesPage = () => {
   const [activitiesData, setActivitiesData] = useState([]);
@@ -22,7 +24,7 @@ const ActivitiesPage = () => {
         setFilteredActivities(data);
         setIsLoading(false);
       } catch (error) {
-        console.error('Error fetching activities:', error);
+        console.error("Error fetching activities!");
         setIsLoading(false);
       }
     };

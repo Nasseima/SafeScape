@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Star, MapPin, Search, Filter, SortAsc, SortDesc, Loader, Coffee, Wifi, Car, Dumbbell } from 'lucide-react';
+import { ToastContainer, toast,  Bounce } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const HotelsPage = () => {
   const [hotels, setHotels] = useState([]);
@@ -20,7 +22,7 @@ const HotelsPage = () => {
         setHotels(data);
         setFilteredHotels(data);
       } catch (error) {
-        console.error(error);
+        toast.error("Error displaying hotels");
       } finally {
         setLoading(false);
       }
@@ -44,6 +46,16 @@ const HotelsPage = () => {
  
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-100 to-indigo-200 p-8">
+       <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        closeOnClick
+        pauseOnHover
+        draggable
+        theme="light" 
+        transition={Bounce} 
+      />
       <h1 className="text-4xl font-bold text-center mb-8 text-indigo-800">Discover Your Perfect Stay</h1>
       
       <div className="mb-8 flex flex-wrap items-center justify-between gap-4">

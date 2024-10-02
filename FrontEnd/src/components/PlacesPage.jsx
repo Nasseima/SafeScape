@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useState, useEffect, useCallback } from "react"
+import { Link } from "lucide-react"
 import { Input } from "../ui/Input"
 import { Button } from "../ui/Button"
 import { Card, CardContent } from "../ui/Card"
@@ -8,8 +9,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "./Tabs"
 import { Popover, PopoverContent, PopoverTrigger } from "./Popover"
 import { MapPin, Search, X, Filter, Sparkles, Image, Info, Hotel, Activity, Heart } from "lucide-react"
 import { motion } from "framer-motion"
-import { Link } from "react-router-dom"
-import { toast } from "react-hot-toast"
+import { ToastContainer, toast,  Bounce } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function PlacesPage() {
   const [places, setPlaces] = useState([])
@@ -117,6 +118,16 @@ export default function PlacesPage() {
 
   return (
     <div className="container mx-auto px-4 py-8 relative">
+       <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        closeOnClick
+        pauseOnHover
+        draggable
+        theme="light" 
+        transition={Bounce} 
+      />
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}

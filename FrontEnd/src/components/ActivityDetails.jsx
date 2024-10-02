@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
+import { ToastContainer, toast,  Bounce } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 function ActivityDetails() {
   const [Activitys, setActivitys] = useState([]);
@@ -21,7 +23,7 @@ function ActivityDetails() {
           setActivitys(data);
           console.log(data);
       } catch (error) {
-          console.error('Error fetching Hotels:', error);
+          toast.error("Error fetching Hotels:");
       } finally {
           setIsLoading(false);
       }
@@ -37,6 +39,16 @@ function ActivityDetails() {
 
   return (
     <div className="min-h-screen bg-gradient-to-r from-blue-500 to-purple-600 py-12 px-4 sm:px-6 lg:px-8">
+       <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        closeOnClick
+        pauseOnHover
+        draggable
+        theme="light" 
+        transition={Bounce} 
+      />
       <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl font-extrabold text-center text-white mb-12 shadow-text">
           Exciting Activities 

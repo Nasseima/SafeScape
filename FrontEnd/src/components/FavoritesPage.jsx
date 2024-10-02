@@ -5,7 +5,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "./Tabs";
 import { MapPin, Image, Info, Hotel, Activity, Trash2, Loader2 } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { toast } from "react-hot-toast";
+import { ToastContainer, toast,  Bounce } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function FavoritesPage() {
   const [favorites, setFavorites] = useState([]);
@@ -41,6 +42,16 @@ export default function FavoritesPage() {
   if (isLoading) {
     return (
       <div className="flex justify-center items-center h-screen">
+         <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        closeOnClick
+        pauseOnHover
+        draggable
+        theme="light" 
+        transition={Bounce} 
+      />
         <Loader2 className="h-8 w-8 animate-spin text-primary" />
       </div>
     );

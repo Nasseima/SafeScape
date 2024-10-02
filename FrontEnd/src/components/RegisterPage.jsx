@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import { ToastContainer, toast, Bounce } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const RegisterPage = () => {
   const [username, setUsername] = useState('');
@@ -34,13 +36,23 @@ const RegisterPage = () => {
       } 
       
     } catch (err) {
-      setError('An error occurred. Please try again.');
-      console.error('Registration error:', err);
+      toast.error("An error occurred. Please try again.");
+      toast.error("Registration error...");
     }
   };
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
+       <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        closeOnClick
+        pauseOnHover
+        draggable
+        theme="light" 
+        transition={Bounce} 
+      />
       <div className="max-w-md w-full bg-white shadow-md rounded p-8">
         <h2 className="text-2xl font-bold mb-4">Register</h2>
         {error && <p className="text-red-500 mb-4">{error}</p>}
