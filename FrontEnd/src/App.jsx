@@ -5,7 +5,6 @@ import HomePage from './components/Homepage';
 import HotelsPage from './components/HotelsPage';
 import ActivitiesPage from './components/ActivitiesPage';
 import LawsPage from './components/LawsPage';
-import DestinationsPage from './components/DestinationsPage';
 import LoginPage from './components/LoginPage';
 import RegisterPage from './components/RegisterPage';
 import Navbar from './components/Navbar';
@@ -83,7 +82,6 @@ const App = () => {
         <Route path="/hotels" element={<HotelsPage />} />
         <Route path="/activities" element={<ActivitiesPage />} />
         <Route path="/laws" element={<LawsPage />} />
-        <Route path="/destinations" element={<DestinationsPage />} />
         <Route path="/calendar" element={
           isAuthenticated ? <CalenderPage /> : <Navigate to="/login" replace />
         } />

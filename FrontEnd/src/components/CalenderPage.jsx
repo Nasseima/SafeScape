@@ -17,7 +17,9 @@ import {
   DialogTitle,
 } from "../ui/Dialog";
 import { ScrollArea } from "../ui/Scroll-area";
-import { toast } from 'react-hot-toast';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const token = localStorage.getItem('token');
 const userId = localStorage.getItem('user_id');
@@ -44,7 +46,7 @@ const CalendarPage = () => {
       const data = await response.json();
       setEvents(data);
     } catch (error) {
-      console.error('Error fetching events:', error);
+      toast.error("Error fetching events....");
       const localEvents = JSON.parse(localStorage.getItem(`events_${userId}`) || '[]');
       setEvents(localEvents);
     }
@@ -67,7 +69,7 @@ const CalendarPage = () => {
       return savedEvent;
     } catch (error) {
       console.error('Error saving event to backend:', error);
-      toast.error('Failed to save event to server. Changes saved locally.');
+      toast.error("Failed to save event to server. Changes saved locally.");
       return null;
     }
   };
@@ -142,7 +144,7 @@ const CalendarPage = () => {
         toast.success('Event deleted successfully');
       } catch (error) {
         console.error('Error deleting event:', error);
-        toast.error('Failed to delete event. Please try again.');
+        toast.error("Failed to delete event. Please try again.");
       }
     }
   }, [events, selectedEvent, userId, token]);
@@ -153,6 +155,16 @@ const CalendarPage = () => {
 
   return (
     <div className="flex h-screen bg-gray-100">
+       <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        closeOnClick
+        pauseOnHover
+        draggable
+        theme="light" 
+        transition={Bounce} 
+      />
       <motion.div
         initial={{ x: -300, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}

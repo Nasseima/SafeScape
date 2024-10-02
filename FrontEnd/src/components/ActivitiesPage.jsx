@@ -63,6 +63,16 @@ const ActivitiesPage = () => {
   if (isLoading) {
     return (
       <div className="flex justify-center items-center h-screen">
+        <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        closeOnClick
+        pauseOnHover
+        draggable
+        theme="light" 
+        transition={Bounce} 
+      />
         <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-blue-500"></div>
       </div>
     );
