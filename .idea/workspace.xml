@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40f7e293-2fdc-4ae6-8177-bdcde4ad82c1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/src/components/ActivitiesPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/components/ActivitiesPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/src/components/ActivityDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/components/ActivityDetails.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/src/components/FlightsPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/components/FlightsPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/src/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/components/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/src/components/Homepage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/components/Homepage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/src/components/LoginPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/components/LoginPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/src/components/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/components/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/src/components/SafetyTipsPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/components/SafetyTipsPage.jsx" afterDir="false" />
-    </list>
+    <list default="true" id="40f7e293-2fdc-4ae6-8177-bdcde4ad82c1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

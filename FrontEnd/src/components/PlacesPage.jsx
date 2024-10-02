@@ -1,7 +1,6 @@
-"use client"
 
 import React, { useState, useEffect, useCallback } from "react"
-import { Link } from "lucide-react"
+import { Link } from 'react-router-dom';
 import { Input } from "../ui/Input"
 import { Button } from "../ui/Button"
 import { Card, CardContent } from "../ui/Card"

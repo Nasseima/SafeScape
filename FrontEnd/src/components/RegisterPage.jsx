@@ -29,21 +29,22 @@ const RegisterPage = () => {
       console.log("Registration Response:", response);
 
       if (response.request.status === 200) {
-  
-          localStorage.setItem('token', response.data.access_token);
-        
-        navigate("/login"); 
+        localStorage.setItem('token', response.data.access_token);
+        toast.success("Registration successful! Redirecting to login...", {
+          autoClose: 900,
+          onClose: () => navigate("/login")
+        });
       } 
       
     } catch (err) {
       toast.error("An error occurred. Please try again.");
-      toast.error("Registration error...");
+      setError("Registration error. Please check your information and try again.");
     }
   };
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
-       <ToastContainer
+      <ToastContainer
         position="top-center"
         autoClose={5000}
         hideProgressBar={false}
@@ -57,7 +58,6 @@ const RegisterPage = () => {
         <h2 className="text-2xl font-bold mb-4">Register</h2>
         {error && <p className="text-red-500 mb-4">{error}</p>}
         <form onSubmit={handleSubmit}>
-
           <div className="mb-4">
             <label htmlFor="firstname" className="block text-gray-700 mb-2">Firstname</label>
             <input
