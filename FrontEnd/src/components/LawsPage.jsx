@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, useMemo, useCallback } from 'react'
 import { Input } from "../ui/Input"
 import { Button } from "../ui/Button"
 import { Card, CardHeader, CardTitle, CardContent } from "../ui/Card"
 import { ScrollArea } from "../ui/Scroll-area"
-import { Globe, Search } from 'lucide-react'
+import { Globe, Search, X} from 'lucide-react'
 
 const lawsData = {
   "France": [
@@ -201,29 +201,76 @@ const lawsData = {
 export default function TravelLaws() {
   const [searchTerm, setSearchTerm] = useState('')
   const [selectedCountry, setSelectedCountry] = useState(null)
+  const [isFocused, setIsFocused] = useState(false)
 
-  const handleSearch = () => {
-    const country = Object.keys(lawsData).find(
-      country => country.toLowerCase() === searchTerm.toLowerCase()
+  const filteredCountries = useMemo(() => {
+    return Object.keys(lawsData).filter(country =>
+      country.toLowerCase().includes(searchTerm.toLowerCase())
     )
-    setSelectedCountry(country || null)
-  }
+  }, [searchTerm])
+
+  const handleSearch = useCallback((country) => {
+    setSelectedCountry(country)
+    setSearchTerm(country)
+    setIsFocused(false)
+  }, [])
+
+  const handleInputChange = useCallback((e) => {
+    setSearchTerm(e.target.value)
+    setSelectedCountry(null)
+  }, [])
+
+  const clearSearch = useCallback(() => {
+    setSearchTerm('')
+    setSelectedCountry(null)
+    setIsFocused(false)
+  }, [])
+
+  const handleKeyDown = useCallback((e) => {
+    if (e.key === 'Escape') {
+      setIsFocused(false)
+    }
+  }, [])
 
   return (
     <div className="container mx-auto p-4">
       <h1 className="text-3xl font-bold mb-6">Travel Laws and Regulations</h1>
-      <div className="flex gap-2 mb-6">
-        <Input 
-          type="text" 
-          placeholder="Search by country" 
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          className="flex-grow"
-        />
-        <Button onClick={handleSearch}>
-          <Search className="mr-2 h-4 w-4" />
-          Search
-        </Button>
+      <div className="relative mb-6">
+        <div className="flex items-center border rounded-md focus-within:ring-2 focus-within:ring-blue-500">
+          <Search className="h-5 w-5 text-gray-400 ml-3" />
+          <Input 
+            type="text" 
+            placeholder="Search by country" 
+            value={searchTerm}
+            onChange={handleInputChange}
+            onFocus={() => setIsFocused(true)}
+            onBlur={() => setTimeout(() => setIsFocused(false), 200)}
+            onKeyDown={handleKeyDown}
+            className="border-none focus:ring-0 pl-2"
+          />
+          {searchTerm && (
+            <button
+              onClick={clearSearch}
+              className="p-2"
+              aria-label="Clear search"
+            >
+              <X className="h-5 w-5 text-gray-400" />
+            </button>
+          )}
+        </div>
+        {filteredCountries.length > 0 && isFocused && (
+          <div className="absolute z-10 w-full mt-1 bg-white border border-gray-300 rounded-md shadow-lg max-h-60 overflow-y-auto">
+            {filteredCountries.map((country) => (
+              <button
+                key={country}
+                className="block w-full text-left px-4 py-2 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                onClick={() => handleSearch(country)}
+              >
+                {country}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
 
       {selectedCountry ? (
@@ -240,9 +287,11 @@ export default function TravelLaws() {
                 {lawsData[selectedCountry].map((item, index) => (
                   <li key={index} className="border-b pb-2">
                     <p className="font-medium mb-1">{item.law}</p>
-                    <a href={item.link} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline text-sm">
-                      Learn more
-                    </a>
+                    {item.link && (
+                      <a href={item.link} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline text-sm">
+                        Learn more
+                      </a>
+                    )}
                   </li>
                 ))}
               </ul>
