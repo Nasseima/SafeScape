@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40f7e293-2fdc-4ae6-8177-bdcde4ad82c1" name="Changes" comment="" />
+    <list default="true" id="40f7e293-2fdc-4ae6-8177-bdcde4ad82c1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/BackEnd/SafeScape/BackEnd/SafeScape/src/test/java/com/example/SafeScape/test/PlaceRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/model/Place.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/model/Place.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,6 +43,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "<unknown>",
     "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/nasseima.lindsay/Desktop/FinalProject/BackEnd/SafeScape/src/test/java",
     "last_opened_file_path": "C:/Users/nasseima.lindsay/Documents/springboot/GLAB310.2.1-SP20",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
@@ -117,6 +121,11 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/auth/AuthenticationController</url>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/BackEnd/SafeScape/src/test/java/com/example/SafeScape/test/PlaceRepositoryTest.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

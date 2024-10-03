@@ -45,4 +45,8 @@ public class Place {
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id")
     private User user;
+
+    //To conduct my Parameterized Test
+    public Place(Object o, String url, String france, String paris, String s, Object o1, Object o2, Object o3) {
+    }
 }
