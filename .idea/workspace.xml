@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40f7e293-2fdc-4ae6-8177-bdcde4ad82c1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/BackEnd/SafeScape/BackEnd/SafeScape/src/test/java/com/example/SafeScape/test/PlaceRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/model/Place.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/SafeScape/src/main/java/com/example/SafeScape/model/Place.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/BackEnd/SafeScape/src/main/java/com/example/SafeScape/dto/RegisterRequest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
