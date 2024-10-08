@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="40f7e293-2fdc-4ae6-8177-bdcde4ad82c1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/SafeScape/BackEnd/SafeScape/src/main/java/com/example/SafeScape/dto/RegisterRequest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +25,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/BackEnd/SafeScape" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectColorInfo">{
@@ -40,8 +39,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.SafeScapeApplication.executor": "Run",
+    "JUnit.RepositoryTests.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "<unknown>",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "C:/Users/nasseima.lindsay/Desktop/FinalProject/BackEnd/SafeScape/src/test/java",
     "last_opened_file_path": "C:/Users/nasseima.lindsay/Documents/springboot/GLAB310.2.1-SP20",
@@ -60,16 +60,31 @@
       <recent name="C:\Users\nasseima.lindsay\Desktop\FinalProject\BackEnd\SafeScape\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.RepositoryTests">
     <configuration name="SafeScapeApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.SafeScape.SafeScapeApplication" />
       <module name="SafeScape" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.SafeScape.*" />
+          <option name="PATTERN" value="com.example.SafeScape.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RepositoryTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SafeScape" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.SafeScape.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.SafeScape.test" />
+      <option name="MAIN_CLASS_NAME" value="com.example.SafeScape.test.RepositoryTests" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -89,6 +104,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RepositoryTests" />
         <item itemvalue="Application.SafeScapeApplication" />
       </list>
     </recent_temporary>
