@@ -60,6 +60,6 @@ Welcome to the Travel Advisor web application! This platform provides travelers 
 
 If you have any questions or feedback, please contact:
 
-Email: lindsaynasseima@gmail.com  
 Email: Safescape.travel@gmail.com
+Email: lindsaynasseima@gmail.com  
 GitHub: [https://github.com/Nasseima](https://github.com/Nasseima)
