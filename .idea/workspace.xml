@@ -28,6 +28,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="JUnit" name="Rerun Failed Tests" />
+    </enabled-run-configurations>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -39,6 +44,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.SafeScapeApplication.executor": "Run",
+    "JUnit.PlaceRepositoryTest.executor": "Run",
     "JUnit.RepositoryTests.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -60,7 +66,7 @@
       <recent name="C:\Users\nasseima.lindsay\Desktop\FinalProject\BackEnd\SafeScape\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RepositoryTests">
+  <component name="RunManager" selected="Application.SafeScapeApplication">
     <configuration name="SafeScapeApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.SafeScape.SafeScapeApplication" />
       <module name="SafeScape" />
@@ -70,6 +76,21 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlaceRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SafeScape" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.SafeScape.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.SafeScape.test" />
+      <option name="MAIN_CLASS_NAME" value="com.example.SafeScape.test.PlaceRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -104,8 +125,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RepositoryTests" />
         <item itemvalue="Application.SafeScapeApplication" />
+        <item itemvalue="JUnit.PlaceRepositoryTest" />
+        <item itemvalue="JUnit.RepositoryTests" />
       </list>
     </recent_temporary>
   </component>
@@ -140,7 +162,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/BackEnd/SafeScape/src/test/java/com/example/SafeScape/test/PlaceRepositoryTest.java</url>
-          <line>16</line>
+          <line>18</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

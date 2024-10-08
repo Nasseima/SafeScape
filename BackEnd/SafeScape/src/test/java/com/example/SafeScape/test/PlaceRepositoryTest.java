@@ -2,12 +2,14 @@ package com.example.SafeScape.test;
 
 import com.example.SafeScape.common.PlaceRepository;
 import com.example.SafeScape.model.Place;
+import com.example.SafeScape.services.PlaceService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+import org.springframework.context.annotation.Import;
 
 import java.util.List;
 

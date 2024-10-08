@@ -6,7 +6,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.TestPropertySource;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -15,7 +15,6 @@ import java.util.Optional;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @DataJpaTest
-@SpringBootTest
 class RepositoryTests {
 
     @Autowired
@@ -59,12 +58,14 @@ class RepositoryTests {
         testUser.setRole(Role.USER);
         userRepository.save(testUser);
 
+        // Create and save a test Activity
         Activity activity = new Activity();
         activity.setAddress("123 Test St");
         activity.setType(ActivityType.Sightseeing);
         activity.setPlace(testPlace);
         activityRepository.save(activity);
 
+        // Create and save a test Event
         Event event = new Event();
         event.setTitle("Test Event");
         event.setStart(LocalDateTime.now());
@@ -74,6 +75,7 @@ class RepositoryTests {
         event.setUser(testUser);
         eventRepository.save(event);
 
+        // Create and save a test Hotel
         Hotel hotel = new Hotel();
         hotel.setName("Test Hotel");
         hotel.setAddress("456 Test Ave");
@@ -83,6 +85,7 @@ class RepositoryTests {
         hotel.setPlace(testPlace);
         hotelRepository.save(hotel);
 
+        // Create and save a test Law
         Law law = new Law();
         law.setDescription("Test Law Description");
         law.setPlace(testPlace);
