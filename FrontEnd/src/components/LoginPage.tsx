@@ -5,17 +5,20 @@ import { Eye, EyeOff } from 'lucide-react';
 import { ToastContainer, toast, Bounce } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const LoginPage = ({ setIsAuthenticated, setUsername }) => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
-  const [isLoading, setIsLoading] = useState(false);
-  const [showPassword, setShowPassword] = useState(false);
+interface LoginPageProps {
+  setIsAuthenticated: (value: boolean) => void;
+  setUsername: (value: string) => void;
+}
+
+const LoginPage: React.FC<LoginPageProps> = ({ setIsAuthenticated, setUsername }) => {
+  const [email, setEmail] = useState<string>('');
+  const [password, setPassword] = useState<string>('');
+  const [error, setError] = useState<string>('');
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [showPassword, setShowPassword] = useState<boolean>(false);
   const navigate = useNavigate();
 
-
-
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setError('');
     setIsLoading(true);
@@ -28,18 +31,15 @@ const LoginPage = ({ setIsAuthenticated, setUsername }) => {
       
       if (response.status === 200) {
         localStorage.setItem('token', response.data.access_token);
-        localStorage.setItem('user_id', response.data.user_id)
-        
-
-        localStorage.setItem('username', response.data.username)
-        // console.log(username)
+        localStorage.setItem('user_id', response.data.user_id);
+        localStorage.setItem('username', response.data.username);
       
         setIsAuthenticated(true);  
         setUsername(response.data.username);  
         navigate('/');  
       } 
     } catch (err) {
-      if (err.response && err.response.status === 500) {
+      if (axios.isAxiosError(err) && err.response && err.response.status === 500) {
         toast.error("Invalid email or password. Please try again.");
       } else {
         toast.error("An error occurred. Please try again later.");
@@ -49,7 +49,6 @@ const LoginPage = ({ setIsAuthenticated, setUsername }) => {
       setIsLoading(false);
     }
   };
- 
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
@@ -57,7 +56,7 @@ const LoginPage = ({ setIsAuthenticated, setUsername }) => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
-       <ToastContainer
+      <ToastContainer
         position="top-center"
         autoClose={5000}
         hideProgressBar={false}
