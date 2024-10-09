@@ -37,14 +37,15 @@ public class SecurityConfig {
                 .cors().and()
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(authz -> authz
-                        .requestMatchers("/register", "/login", "/places/**", "/hotels/**", "/laws/**", "/activities/**", "/api/auth/**", "/events/**", "/api/wishlist/**", "/api/user/**" ).permitAll()
+                        .requestMatchers("/register", "/login", "/places/**", "/hotels/**", "/laws/**", "/activities/**", "/api/auth/**", "/events/**", "/api/wishlist/**", "/api/user/**").permitAll()
                         .requestMatchers("/api/admin/**").hasRole("ADMIN")
                         .requestMatchers("/v2/api-docs", "/swagger-resources/**", "/swagger-ui.html", "/webjars/**").permitAll()
                         .requestMatchers("/actuator/**").hasRole("ADMIN")
                         .anyRequest().authenticated()
                 )
+                // Implemented session management!!
                 .sessionManagement(session -> session
-                        .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+                        .sessionCreationPolicy(SessionCreationPolicy.STATELESS) // Keep this for stateless behavior
                 )
                 .authenticationProvider(authenticationProvider)
                 .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class)

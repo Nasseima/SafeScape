@@ -41,22 +41,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.SafeScapeApplication.executor": "Run",
-    "JUnit.PlaceRepositoryTest.executor": "Run",
-    "JUnit.RepositoryTests.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_directory_selection": "C:/Users/nasseima.lindsay/Desktop/FinalProject/BackEnd/SafeScape/src/test/java",
-    "last_opened_file_path": "C:/Users/nasseima.lindsay/Documents/springboot/GLAB310.2.1-SP20",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "project.propCompiler"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.SafeScapeApplication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PlaceRepositoryTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RepositoryTests.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/nasseima.lindsay/Desktop/FinalProject/BackEnd/SafeScape/src/test/java&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/nasseima.lindsay/Documents/springboot/GLAB310.2.1-SP20&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\nasseima.lindsay\Desktop\FinalProject\BackEnd\SafeScape\src\main\java\com\example\SafeScape" />
